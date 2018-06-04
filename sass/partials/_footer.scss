@@ -1,0 +1,31 @@
+/*styles for footer*/
+
+footer {
+	height: 20vh;
+	background-color: #f4979c;
+	display: flex;
+
+	.row {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		.icons {
+			width: 300px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			img {
+				height: 50px;
+			}
+		}
+		.copyright {
+			margin-top: 10px;
+			p {
+				text-align: center;
+				color: white;
+				font-size: 15px;
+			}
+		}
+	}
+}
