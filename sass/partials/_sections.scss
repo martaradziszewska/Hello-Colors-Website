@@ -5,7 +5,9 @@
 	//	justify-content: center;
 	flex-wrap: wrap;
 	flex-direction: column;
+
 	header {
+		width: 100%;
 		flex-grow: 1;
 	}
 	.row {
@@ -25,11 +27,6 @@
 			height: 500px;
 			width: 50%;
 			background-color: white;
-			h3 {
-				//				font-size: 3em;
-				//				font-weight: 300;
-				//				margin-bottom: 0.5em;
-			}
 			p:nth-child(3) {
 				margin-top: 2em;
 			}
@@ -106,7 +103,7 @@
 		.about-us {
 			text-align: justify;
 			width: 50%;
-			//			height: 90vh; //			overflow: auto;
+
 		}
 		aside {
 			color: white;
@@ -124,9 +121,7 @@
 			h3 {
 				line-height: 50px;
 				color: #03224a;
-				//				font-size: 52px;
-				//				font-weight: 300;
-				//				padding-bottom: 10px;
+
 			}
 			p {
 				margin-top: 20px;
@@ -162,9 +157,7 @@
 	p {
 		margin-bottom: 20px;
 	}
-	//	header {
-	//		flex-grow:1;
-	//	}
+
 	.row {
 		display: flex;
 		flex-direction: row;
