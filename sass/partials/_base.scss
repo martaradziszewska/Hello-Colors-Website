@@ -25,10 +25,9 @@ body {
 h2 {
 
 	margin: 1rem 0;
-	letter-spacing: 25px;
-//	font-size: 100px;
+	letter-spacing: 25px; //	font-size: 100px;
 	font-size: 15vh;
-	color: #75e3dd;
+	color: $color-mint;
 	font-weight: 300;
 }
 
@@ -43,22 +42,29 @@ h3 {
 
 
 @media (max-width: 660px) {
+	.main-width {
+		padding: 0 0;
+	}
 	h2 {
+		text-align: center;
+		color: white !important;
+		background-color: $color-darkblue;
+
 		font-size: 10vh;
 	}
 }
 
 @media (max-width: 505px) {
 	h2 {
+
 		font-size: 8vh;
 	}
 }
 
 @media (max-width: 427px) {
+
 	h2 {
+
 		font-size: 5vh;
 	}
 }
-
-
-

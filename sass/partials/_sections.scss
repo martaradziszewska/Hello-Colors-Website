@@ -1,8 +1,7 @@
 /*styles for projects section*/
 
 .projects {
-	display: flex;
-	//	justify-content: center;
+	display: flex; //	justify-content: center;
 	flex-wrap: wrap;
 	flex-direction: column;
 
@@ -13,7 +12,6 @@
 	.row {
 		display: flex;
 		flex-direction: row;
-		flex-wrap: wrap;
 		.pic {
 			flex-shrink: 0;
 			height: 500px;
@@ -22,9 +20,8 @@
 		}
 		.description {
 			padding: 50px 0 0 50px;
-			color: #16736e;
+			color: $color-accent;
 			flex-shrink: 0;
-			height: 500px;
 			width: 50%;
 			background-color: white;
 			p:nth-child(3) {
@@ -34,7 +31,7 @@
 				font-size: 0.8em;
 				text-decoration: none;
 				text-transform: uppercase;
-				color: #2fdbd2;
+				color: $color-mint;
 			}
 		}
 	}
@@ -97,8 +94,6 @@
 	//		}
 	.row {
 		display: flex;
-		flex-direction: row;
-		//		flex-wrap: wrap;
 		aside,
 		.about-us {
 			text-align: justify;
@@ -120,7 +115,7 @@
 			padding: 20px 20px 0 20px;
 			h3 {
 				line-height: 50px;
-				color: #03224a;
+				color: $color-darkblue;
 
 			}
 			p {
@@ -129,7 +124,7 @@
 			}
 			& :nth-child(5) {
 				font-weight: 900;
-				color: #03224a;
+				color: $color-darkblue;
 			}
 
 		}
@@ -137,7 +132,7 @@
 	header {
 		flex-grow: 1;
 		h2 {
-			color: #03224a;
+			color: $color-darkblue;
 		}
 	}
 
@@ -152,7 +147,7 @@
 	flex-wrap: wrap;
 	flex-direction: column;
 	h2 {
-		color: #f4979c;
+		color: $color-pink;
 	}
 	p {
 		margin-bottom: 20px;
@@ -174,15 +169,15 @@
 				width: 75%;
 				margin-bottom: 20px;
 				border: none;
-				border-bottom: 3px solid #f4979c;
+				border-bottom: 3px solid $color-pink;
 				resize: none;
 				padding-left: 10px;
 			}
 			button {
 				padding: 5px 5px;
 				border: none;
-				color: #03224a;
-				background-color: #f4979c;
+				color: $color-darkblue;
+				background-color: $color-pink;
 				width: 75%;
 
 			}
@@ -191,11 +186,11 @@
 			display: flex;
 			flex-direction: column;
 			width: 50%;
-			& div:nth-child(1) {
+			.img-office {
 				width: 100%;
 				height: auto;
 				background: url("../images/office.png") no-repeat center;
-				background-size: contain;
+				background-size: cover;
 			}
 			& div:nth-child(2) {
 				width: 100%;
@@ -213,9 +208,10 @@
 
 
 @media (max-width: 660px) {
-
 	.projects {
+
 		.row {
+			padding: 0 20px;
 			flex-direction: column;
 			.pic,
 			.description {
@@ -223,7 +219,6 @@
 			}
 			.description {
 				padding: 50px 0;
-				height: 300px;
 			}
 		}
 		& :nth-child(3) {
@@ -231,9 +226,6 @@
 		}
 
 	}
-
-
-
 	.team {
 		.row {
 			flex-direction: column;
@@ -241,21 +233,33 @@
 			.about-us {
 				width: 100%;
 			}
+			aside {
+				height: 20vh;
+			}
 		}
 	}
 
 	.contact-form {
 		.row {
 			flex-direction: column;
-			justify-content: center;
+			align-items: center;
 
 			form {
-
-				width: 100%;
+				input,
+				textarea {
+					width: 100%;
+				}
 			}
 			.info {
+				margin-top: 30px;
 				width: 100%;
 				flex-direction: column;
+				align-items: center;
+				text-align: center;
+				.img-office {
+					height: 15vh;
+					width: 100%;
+				}
 
 			}
 		}
